@@ -1,0 +1,241 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:100';
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block; }
+
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+audio:not([controls]) {
+  display: none; }
+
+[hidden] {
+  display: none; }
+
+html {
+  font-size: 100%;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  background-color: #767E7D;
+  background: url("http://wp.production.patheos.com/blogs/quranalyzeit/files/2015/06/my_image_of_the_quran_by_msnsam-d50xawo.jpg") no-repeat center center;
+  background-size: cover; }
+
+body {
+  margin: 0; }
+
+body, button, input, select, textarea {
+  font-family: "Roboto", sans-serif; }
+
+a {
+  color: white; }
+  a:visited {
+    color: white; }
+  a:focus {
+    outline: thin dotted; }
+  a:hover, a:active {
+    outline: 0; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b, strong {
+  font-weight: bold; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+pre, code, kbd, samp {
+  font-family: "Roboto", monospace, serif;
+  _font-family: "Roboto", "courier new", monospace;
+  font-size: 1em; }
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+q {
+  quotes: none; }
+  q:before, q:after {
+    content: "";
+    content: none; }
+
+small {
+  font-size: 75%; }
+
+blockquote {
+  margin: 1em 40px; }
+
+sub {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+ul, ol {
+  margin: 1em 0;
+  padding: 0 0 0 40px; }
+
+dd {
+  margin: 0 0 0 40px; }
+
+nav ul, nav ol {
+  list-style: none;
+  list-style-image: none; }
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+figure {
+  margin: 0; }
+
+form {
+  margin: 0; }
+
+fieldset {
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+legend {
+  border: 0;
+  *margin-left: -7px; }
+
+button, input, select, textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle; }
+
+button, input {
+  line-height: normal;
+  *overflow: visible; }
+
+table button, table input {
+  *overflow: auto; }
+
+button, html input[type="button"], html input[type="reset"], html input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button; }
+
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box; }
+  input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none; }
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  -webkit-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
+  font-family: "Roboto", serif; }
+
+.ajmakhlNavBarContainer .ajmakhlNavBarUl .ajmakhlNavBarLi {
+  list-style: none;
+  padding: 10px; }
+  .ajmakhlNavBarContainer .ajmakhlNavBarUl .ajmakhlNavBarLi .ajmakhlNavBarHome {
+    color: #1C2827;
+    text-decoration: none;
+    font-size: 26px; }
+    .ajmakhlNavBarContainer .ajmakhlNavBarUl .ajmakhlNavBarLi .ajmakhlNavBarHome:hover {
+      color: black;
+      font-weight: bold; }
+    .ajmakhlNavBarContainer .ajmakhlNavBarUl .ajmakhlNavBarLi .ajmakhlNavBarHome:visited {
+      color: #1C2827; }
+
+.ajmakhlContainer {
+  background-color: rgba(249, 249, 249, 0.8);
+  padding: 10px;
+  width: 70%;
+  margin: 0 auto;
+  height: 100vh; }
+  .ajmakhlContainer .ajmakhlHeader #ajmakhlHeaderH2, .ajmakhlContainer .ajmakhlHeader #ajmakhlHeaderH4 {
+    color: #B4ECB4;
+    padding: 10px;
+    background: rgba(28, 40, 39, 0.542);
+    font-size: 16px; }
+  .ajmakhlContainer .ajmakhlFirstContentContainer {
+    margin-top: 20px; }
+    .ajmakhlContainer .ajmakhlFirstContentContainer .ajmakhlFirstContent #ajmakhlFirstContentFirstP, .ajmakhlContainer .ajmakhlFirstContentContainer .ajmakhlFirstContent #ajmakhlFirstContentSecondP {
+      text-align: center;
+      font-size: 16px; }
+
+@media (min-width: 1125px) {
+  .ajmakhlContainer .ajmakhlHeader {
+    height: 400px; }
+    .ajmakhlContainer .ajmakhlHeader #ajmakhlHeaderH2, .ajmakhlContainer .ajmakhlHeader #ajmakhlHeaderH4 {
+      font-size: 2em; }
+    .ajmakhlContainer .ajmakhlHeader #ajmakhlHeaderH4 {
+      font-size: 2em; }
+  .ajmakhlContainer .ajmakhlFirstContentContainer .ajmakhlFirstContent #ajmakhlFirstContentFirstP, .ajmakhlContainer .ajmakhlFirstContentContainer .ajmakhlFirstContent #ajmakhlFirstContentSecondP {
+    font-size: 2em; }
+  .ajmakhlContainer .ajmakhlFirstContentContainer .ajmakhlFirstContent #ajmakhlFirstContentSecondP {
+    font-size: 1.3em;
+    width: 70%;
+    margin: 0 auto; } }
+@media (max-width: 1126px) and (min-width: 939px) {
+  .ajmakhlContainer .ajmakhlHeader {
+    height: 400px; }
+    .ajmakhlContainer .ajmakhlHeader #ajmakhlHeaderH2, .ajmakhlContainer .ajmakhlHeader #ajmakhlHeaderH4 {
+      font-size: 2em; }
+    .ajmakhlContainer .ajmakhlHeader #ajmakhlHeaderH4 {
+      font-size: 2em; }
+  .ajmakhlContainer .ajmakhlFirstContentContainer .ajmakhlFirstContent #ajmakhlFirstContentFirstP, .ajmakhlContainer .ajmakhlFirstContentContainer .ajmakhlFirstContent #ajmakhlFirstContentSecondP {
+    font-size: 2em; }
+  .ajmakhlContainer .ajmakhlFirstContentContainer .ajmakhlFirstContent #ajmakhlFirstContentSecondP {
+    font-size: 1.3em; } }
+@media (max-width: 940px) and (min-width: 677px) {
+  .ajmakhlContainer .ajmakhlHeader {
+    height: 300px; }
+    .ajmakhlContainer .ajmakhlHeader #ajmakhlHeaderH2, .ajmakhlContainer .ajmakhlHeader #ajmakhlHeaderH4 {
+      font-size: 1.6em; }
+    .ajmakhlContainer .ajmakhlHeader #ajmakhlHeaderH4 {
+      font-size: 1.6em; }
+  .ajmakhlContainer .ajmakhlFirstContentContainer .ajmakhlFirstContent #ajmakhlFirstContentFirstP, .ajmakhlContainer .ajmakhlFirstContentContainer .ajmakhlFirstContent #ajmakhlFirstContentSecondP {
+    font-size: 1.5em; }
+  .ajmakhlContainer .ajmakhlFirstContentContainer .ajmakhlFirstContent #ajmakhlFirstContentSecondP {
+    font-size: 1.3em; } }
+@media (max-width: 678px) {
+  .ajmakhlContainer .ajmakhlHeader {
+    height: 200px; }
+    .ajmakhlContainer .ajmakhlHeader #ajmakhlHeaderH2, .ajmakhlContainer .ajmakhlHeader #ajmakhlHeaderH4 {
+      font-size: 1em; }
+    .ajmakhlContainer .ajmakhlHeader #ajmakhlHeaderH4 {
+      font-size: 1em; }
+  .ajmakhlContainer .ajmakhlFirstContentContainer .ajmakhlFirstContent #ajmakhlFirstContentFirstP, .ajmakhlContainer .ajmakhlFirstContentContainer .ajmakhlFirstContent #ajmakhlFirstContentSecondP {
+    font-size: 1.3em; }
+  .ajmakhlContainer .ajmakhlFirstContentContainer .ajmakhlFirstContent #ajmakhlFirstContentSecondP {
+    font-size: 1em; } }
