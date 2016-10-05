@@ -1,0 +1,11 @@
+
+p {
+  @include margin0;
+}
+.myCol {
+  @include colFlex;
+}
+#bismillah {
+  text-align: center;
+  font-size: 30px;
+}
