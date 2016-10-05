@@ -1,0 +1,49 @@
+.myHeader {
+  @include colFlex;
+  .myHeaderContain {
+    margin-top: 100px;
+    @include colFlex;
+    @include headerBox;
+    @include headerFont;
+  }
+}
+.blueBg {
+  @include blueBg;
+  transition: ease .2s;
+}
+.redBg {
+  @include redBg;
+  transition: ease .2s;
+}
+.myRes {
+  border: 20px solid $black;
+  box-shadow: 0px 0px 30px 0px rgba($black, 1);
+  margin-top: 50px;
+  padding-bottom: 20px;
+  @include colFlex;
+  .resBoxSm {
+    margin-top: 20px;
+    @include colFlex;
+    @include smallBox;
+    .resTitleSm {
+      @include smallBoxTitle;
+    }
+  }
+  .resBoxLg {
+    @include colFlex;
+    @include largeBox;
+    box-shadow: 0px 0px 30px 0px rgba($black, 1);
+    .resSubTitleLg {
+      @include largeBoxSubTitle;
+    }
+    .resContentDiv {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+    .resContentLg {
+      @include largeBoxContent;
+    }
+  }
+}

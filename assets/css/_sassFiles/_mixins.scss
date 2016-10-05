@@ -1,0 +1,68 @@
+
+@mixin colFlex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@mixin rowFlex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+@mixin headerBox {
+  width: 400px;
+  padding: 20px;
+  background-color: $red;
+  cursor: default;
+}
+@mixin headerFont {
+  color: $white;
+  font-size: 20px;
+}
+@mixin smallBox {
+  width: 100%;
+  padding: 10px;
+  cursor: default;
+}
+@mixin redBg {
+    background-color: $red;
+}
+@mixin blueBg {
+    background-color: $blue;
+}
+@mixin radius {
+  border-radius: 20px;
+}
+@mixin topRadius {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+@mixin smallBoxTitle {
+  color: $white;
+  font-size: 30px;
+}
+@mixin largeBox {
+  width: 100%;
+  background-color: $red;
+  cursor: default;
+}
+@mixin margin0 {
+  margin: 0;
+}
+@mixin largeBoxSubTitle {
+  background-color: $orange;
+  width: 70%;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+@mixin largeBoxContent {
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
