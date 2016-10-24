@@ -1,5 +1,6 @@
 p {
-  margin: 0; }
+  margin: 0;
+  font-size: 16px; }
 
 .myCol {
   display: -webkit-box;
@@ -20,72 +21,25 @@ p {
   text-align: center;
   font-size: 30px; }
 
-.myHeader {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-  .myHeader .myHeaderContain {
-    margin-top: 100px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 400px;
-    padding: 20px;
-    background-color: #FC5B50;
-    cursor: default;
+.col-left {
+  background-color: #378FA9;
+  width: 400px; }
+  .col-left .title {
+    -ms-flex-item-align: center;
+        align-self: center;
+    font-weight: lighter;
+    font-size: 30px;
+    color: #F1F1F1; }
+    .col-left .title span {
+      font-weight: bold; }
+  .col-left .subTitle {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    font-weight: bold;
+    font-size: 20px;
     color: #F1F1F1;
-    font-size: 20px; }
-
-.blueBg {
-  background-color: #509BFC;
-  -webkit-transition: ease .2s;
-  transition: ease .2s; }
-
-.redBg {
-  background-color: #FC5B50;
-  -webkit-transition: ease .2s;
-  transition: ease .2s; }
-
-.myRes {
-  border: 20px solid #1F1F1F;
-  box-shadow: 0px 0px 30px 0px #1f1f1f;
-  margin-top: 50px;
-  padding-bottom: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-  .myRes .resBoxSm {
-    margin-top: 20px;
+    margin: 20px 0px 0px 0px; }
+  .col-left .leftBlock {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -93,60 +47,89 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 10px 20px 10px 20px; }
+  .col-left .personalInformation .pID {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 100%;
-    padding: 10px;
-    cursor: default; }
-    .myRes .resBoxSm .resTitleSm {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin: 10px 0px 10px 0px; }
+    .col-left .personalInformation .pID .pIDL {
+      width: 50px;
+      height: 50px;
+      -ms-flex-item-align: start;
+          align-self: flex-start; }
+    .col-left .personalInformation .pID #nameLogo {
+      background: url("../../vectors/nameLogo.svg"); }
+    .col-left .personalInformation .pID #emailLogo {
+      background: url("../../vectors/emailLogo.svg"); }
+    .col-left .personalInformation .pID #phoneLogo {
+      background: url("../../vectors/phoneLogo.svg"); }
+    .col-left .personalInformation .pID #locationLogo {
+      background: url("../../vectors/locationLogo.svg"); }
+    .col-left .personalInformation .pID #webLogo {
+      background: url("../../vectors/webLogo.svg"); }
+    .col-left .personalInformation .pID #linkedinLogo {
+      background: url("../../vectors/linkedinLogo.svg"); }
+    .col-left .personalInformation .pID .pIDN {
       color: #F1F1F1;
-      font-size: 30px; }
-  .myRes .resBoxLg {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 100%;
-    background-color: #FC5B50;
-    cursor: default;
-    box-shadow: 0px 0px 30px 0px #1f1f1f; }
-    .myRes .resBoxLg .resSubTitleLg {
-      background-color: #FCB150;
-      width: 70%;
-      padding: 10px;
-      text-align: center;
-      color: white;
-      font-size: 30px; }
-    .myRes .resBoxLg .resContentDiv {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; }
-    .myRes .resBoxLg .resContentLg {
-      padding: 10px;
-      margin: 10px;
-      text-align: center;
-      color: white;
+      padding-left: 10px;
       font-size: 20px; }
+  .col-left .technicalExperience .tED {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+                -ms-grid-row-align: flex-start;
+            align-items: flex-start;
+    margin: 5px 0px 5px 0px; }
+    .col-left .technicalExperience .tED .tEN {
+      color: white; }
+    .col-left .technicalExperience .tED .tESO {
+      border: 1px solid #F1F1F1;
+      width: 360px;
+      height: 15px; }
+      .col-left .technicalExperience .tED .tESO .tESI {
+        height: 14px; }
+      .col-left .technicalExperience .tED .tESO #htmlTesi {
+        background-color: #F1F1F1;
+        width: 250px; }
+      .col-left .technicalExperience .tED .tESO #cssTesi {
+        background-color: #F1F1F1;
+        width: 250px; }
+      .col-left .technicalExperience .tED .tESO #javascriptTesi {
+        background-color: #F1F1F1;
+        width: 100px; }
+      .col-left .technicalExperience .tED .tESO #javaTesi {
+        background-color: #F1F1F1;
+        width: 100px; }
+      .col-left .technicalExperience .tED .tESO #reactNativeTesi {
+        background-color: #F1F1F1;
+        width: 50px; }
+      .col-left .technicalExperience .tED .tESO #microsoftOfficeTesi {
+        background-color: #F1F1F1;
+        width: 250px; }
+      .col-left .technicalExperience .tED .tESO #adobeCCTesi {
+        background-color: #F1F1F1;
+        width: 170px; }
+      .col-left .technicalExperience .tED .tESO #cinema4DTesi {
+        background-color: #F1F1F1;
+        width: 170px; }
+      .col-left .technicalExperience .tED .tESO #affinityDesignerTesi {
+        background-color: #F1F1F1;
+        width: 290px; }
+      .col-left .technicalExperience .tED .tESO #windowsTesi {
+        background-color: #F1F1F1;
+        width: 200px; }
+      .col-left .technicalExperience .tED .tESO #macTesi {
+        background-color: #F1F1F1;
+        width: 200px; }
