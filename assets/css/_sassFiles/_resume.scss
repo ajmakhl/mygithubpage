@@ -1,49 +1,131 @@
-.myHeader {
-  @include colFlex;
-  .myHeaderContain {
-    margin-top: 100px;
-    @include colFlex;
-    @include headerBox;
-    @include headerFont;
-  }
-}
-.blueBg {
-  @include blueBg;
-  transition: ease .2s;
-}
-.redBg {
-  @include redBg;
-  transition: ease .2s;
-}
-.myRes {
-  border: 20px solid $black;
-  box-shadow: 0px 0px 30px 0px rgba($black, 1);
-  margin-top: 50px;
-  padding-bottom: 20px;
-  @include colFlex;
-  .resBoxSm {
-    margin-top: 20px;
-    @include colFlex;
-    @include smallBox;
-    .resTitleSm {
-      @include smallBoxTitle;
+
+.col-left {
+  background-color: $blue;
+  width: 400px;
+  .title {
+    align-self: center;
+    font-weight: lighter;
+    font-size: 30px;
+    color: $white;
+    span {
+      font-weight: bold;
     }
   }
-  .resBoxLg {
-    @include colFlex;
-    @include largeBox;
-    box-shadow: 0px 0px 30px 0px rgba($black, 1);
-    .resSubTitleLg {
-      @include largeBoxSubTitle;
-    }
-    .resContentDiv {
+  .subTitle {
+    align-self: flex-start;
+    font-weight:bold;
+    font-size: 20px;
+    color: $white;
+    margin: 20px 0px 0px 0px;
+  }
+  .leftBlock {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    justify-content: flex-start;
+    padding: 10px 20px 10px 20px;
+  }
+  .personalInformation {
+    .pID {
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: center;
-    }
-    .resContentLg {
-      @include largeBoxContent;
+      align-self: flex-start;
+      margin: 10px 0px 10px 0px;
+      .pIDL {
+        width: 50px;
+        height: 50px;
+        align-self: flex-start;
+        // margin-top: 20px;
+      }
+      #nameLogo {
+        background: url('../../vectors/nameLogo.svg');
+      }
+      #emailLogo {
+        background: url('../../vectors/emailLogo.svg');
+      }
+      #phoneLogo {
+        background: url('../../vectors/phoneLogo.svg');
+      }
+      #locationLogo {
+        background: url('../../vectors/locationLogo.svg');
+      }
+      #webLogo {
+        background: url('../../vectors/webLogo.svg');
+      }
+      #linkedinLogo {
+        background: url('../../vectors/linkedinLogo.svg');
+      }
+      .pIDN {
+        color: $white;
+        padding-left: 10px;
+        // margin-top: 20px;
+        font-size: 20px;
+      }
     }
   }
+  .technicalExperience {
+    .tED {
+      align-items: flex-start;
+      margin: 5px 0px 5px 0px;
+      .tEN {
+        color: white;
+      }
+      .tESO {
+        border: 1px solid $white;
+        width: 360px;
+        height: 15px;
+        .tESI {
+          height: 14px;
+        }
+        #htmlTesi {
+          background-color: $white;
+          width: 250px;
+        }
+        #cssTesi {
+          background-color: $white;
+          width: 250px;
+        }
+        #javascriptTesi {
+          background-color: $white;
+          width: 100px;
+        }
+        #javaTesi {
+          background-color: $white;
+          width: 100px;
+        }
+        #reactNativeTesi {
+          background-color: $white;
+          width: 50px;
+        }
+        #microsoftOfficeTesi {
+          background-color: $white;
+          width: 250px;
+        }
+        #adobeCCTesi {
+          background-color: $white;
+          width: 170px;
+        }
+        #cinema4DTesi {
+          background-color: $white;
+          width: 170px;
+        }
+        #affinityDesignerTesi {
+          background-color: $white;
+          width: 290px;
+        }
+        #windowsTesi {
+          background-color: $white;
+          width: 200px;
+        }
+        #macTesi {
+          background-color: $white;
+          width: 200px;
+        }
+      }
+    }
+  }
+
+}
+.col-right {
 }

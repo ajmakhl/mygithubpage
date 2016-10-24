@@ -1,6 +1,7 @@
 
 p {
-  @include margin0;
+  margin: 0;
+  font-size: 16px;
 }
 .myCol {
   @include colFlex;
