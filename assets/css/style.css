@@ -181,9 +181,9 @@ p {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
   .myCol .myColG {
     margin: 10px;
     width: 250px;
@@ -322,12 +322,13 @@ p {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around; }
-  .indexCol a {
+  .indexCol .indexA {
     font-size: 20px;
     margin-top: 20px;
     background-color: #FCB150;
     padding: 10px 20px 10px 20px;
-    color: white; }
-    .indexCol a:hover {
+    color: white;
+    text-decoration: none; }
+    .indexCol .indexA:hover {
       color: #F1F1F1;
       text-decoration: none; }

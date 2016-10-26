@@ -3,12 +3,13 @@
  flex-direction: row;
  align-items: center;
  justify-content:space-around;
- a {
+ .indexA {
    font-size: 20px;
    margin-top: 20px;
    background-color: $orange;
    padding: 10px 20px 10px 20px;
    color: white;
+   text-decoration: none;
    &:hover {
      color: $white;
     text-decoration: none;
