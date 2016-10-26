@@ -21,6 +21,15 @@ p {
   text-align: center;
   font-size: 30px; }
 
+.myRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
 .col-left {
   background-color: #378FA9;
   width: 400px; }
@@ -133,3 +142,31 @@ p {
       .col-left .technicalExperience .tED .tESO #macTesi {
         background-color: #F1F1F1;
         width: 200px; }
+
+.col-right {
+  background-color: white;
+  width: 740px; }
+  .col-right .rightBlock .eBlock {
+    padding: 20px; }
+    .col-right .rightBlock .eBlock .line {
+      background-color: #1F1F1F;
+      width: 70px;
+      height: 1px; }
+    .col-right .rightBlock .eBlock .rTitle {
+      font-size: 40px; }
+    .col-right .rightBlock .eBlock .emD {
+      margin-top: 10px;
+      padding-left: 20px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .col-right .rightBlock .eBlock .emD .emT {
+        font-size: 30px; }
+      .col-right .rightBlock .eBlock .emD .emSubT {
+        font-size: 15px; }
+      .col-right .rightBlock .eBlock .emD .emLi {
+        font-size: 20px; }

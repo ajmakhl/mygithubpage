@@ -1,4 +1,9 @@
 
+.myRow {
+  display: flex;
+  flex-direction: row;
+
+}
 .col-left {
   background-color: $blue;
   width: 400px;
@@ -128,4 +133,40 @@
 
 }
 .col-right {
+  background-color: white;
+  width: 740px;
+  .rightBlock {
+    .eBlock {
+      padding: 20px;
+      .line {
+        background-color: $black;
+        width: 70px;
+        height: 1px;
+      }
+      .rTitle {
+font-size: 40px;
+      }
+      .emD {
+        margin-top: 10px;
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        p {
+          // height: 24px;
+        }
+        .emT {
+font-size: 30px;
+        }
+        .emSubT {
+font-size: 15px;
+        }
+        .emUl {
+
+        }
+        .emLi {
+font-size: 20px;
+        }
+      }
+    }
+  }
 }
