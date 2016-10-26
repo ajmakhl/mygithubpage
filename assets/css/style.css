@@ -170,3 +170,164 @@ p {
         font-size: 15px; }
       .col-right .rightBlock .eBlock .emD .emLi {
         font-size: 20px; }
+
+.myCol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .myCol .myColG {
+    margin: 10px;
+    width: 250px;
+    height: 140.6px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75); }
+  .myCol #g001 {
+    background: url("https://raw.githubusercontent.com/ajmakhl/Images/master/small/001.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+  .myCol #g002 {
+    background: url("https://raw.githubusercontent.com/ajmakhl/Images/master/small/002.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+  .myCol #g003 {
+    background: url("https://raw.githubusercontent.com/ajmakhl/Images/master/small/003.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+  .myCol #g004 {
+    background: url("https://raw.githubusercontent.com/ajmakhl/Images/master/small/004.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+  .myCol #g005 {
+    background: url("https://raw.githubusercontent.com/ajmakhl/Images/master/small/005.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+  .myCol #g006 {
+    background: url("https://raw.githubusercontent.com/ajmakhl/Images/master/small/006.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+  .myCol #g007 {
+    background: url("https://raw.githubusercontent.com/ajmakhl/Images/master/small/007.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+  .myCol #g008 {
+    background: url("https://raw.githubusercontent.com/ajmakhl/Images/master/small/008.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+  .myCol #g009 {
+    background: url("https://raw.githubusercontent.com/ajmakhl/Images/master/small/009.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+  .myCol #g010 {
+    background: url("https://raw.githubusercontent.com/ajmakhl/Images/master/small/010.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+  .myCol #g011 {
+    background: url("https://raw.githubusercontent.com/ajmakhl/Images/master/small/011.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+  .myCol #g012 {
+    background: url("https://raw.githubusercontent.com/ajmakhl/Images/master/small/012.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+  .myCol #g013 {
+    background: url("https://raw.githubusercontent.com/ajmakhl/Images/master/small/013.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+  .myCol #g014 {
+    background: url("https://raw.githubusercontent.com/ajmakhl/Images/master/small/014.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+  .myCol #g015 {
+    background: url("https://raw.githubusercontent.com/ajmakhl/Images/master/small/015.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+  .myCol #g016 {
+    background: url("https://raw.githubusercontent.com/ajmakhl/Images/master/small/016.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+  .myCol #g017 {
+    background: url("https://raw.githubusercontent.com/ajmakhl/Images/master/small/017.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+  .myCol #g018 {
+    background: url("https://raw.githubusercontent.com/ajmakhl/Images/master/small/018.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+  .myCol #g019 {
+    background: url("https://raw.githubusercontent.com/ajmakhl/Images/master/small/019.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+  .myCol #g020 {
+    background: url("https://raw.githubusercontent.com/ajmakhl/Images/master/small/020.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+  .myCol #g021 {
+    background: url("https://raw.githubusercontent.com/ajmakhl/Images/master/small/021.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+  .myCol #g022 {
+    background: url("https://raw.githubusercontent.com/ajmakhl/Images/master/small/022.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+  .myCol #g023 {
+    background: url("https://raw.githubusercontent.com/ajmakhl/Images/master/small/023.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+
+@media screen and (max-width: 569px) {
+  .myCol {
+    -ms-flex-pack: distribute;
+        justify-content: space-around; } }
+.indexCol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .indexCol a {
+    font-size: 20px;
+    margin-top: 20px;
+    background-color: #FCB150;
+    padding: 10px 20px 10px 20px;
+    color: white; }
+    .indexCol a:hover {
+      color: #F1F1F1;
+      text-decoration: none; }
