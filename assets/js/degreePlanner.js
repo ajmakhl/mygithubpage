@@ -469,8 +469,8 @@ $('.math2200 .classCreditNum').text(math2200.classCreditNum);
     input = $('.degreePlannerGetForm input').val();
     correctUserId = "";
     // if input is matched with correct ID
-    // if (input === userInfo.userId) {
-    if (input === correctUserId) {
+    if (input === userInfo.userId) {
+    // if (input === correctUserId) {
       // slide toggle if true
       $(".degreePlannerUserPersonalInfoContainer").slideDown();
       $('#idDetail').text(userInfo.userId);
