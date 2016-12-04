@@ -1,0 +1,15 @@
+// remove number spinners
+@mixin removeSpin {
+  input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+@mixin defaultBS($vPx,$blurPx) {
+  box-shadow: 0px $vPx $blurPx 0px rgba($black, 0.5);
+}

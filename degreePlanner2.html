@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Degree Planner</title>
+</head>
+<body>
+  <div class="container degreePlannerContainer">
+    <div class="row degreePlannerRow">
+      <div class="col-md-12 degreePlannerCol">
+        <!-- get user information -->
+        <div class="degreePlannerGetForm">
+          <input type="number" placeholder="Student Number">
+          <button type="button">submit</button>
+        </div>
+
+        <div class="degreePlannerUserPersonalInfo">
+          <p id="userFullName">AJ Makhl</p>
+          <img id="userPicture" src="assets/img/userPic.svg" alt="" />
+          <div class="userInfoBox">
+            <div class="userInfoBoxElement">
+              <div class="userInfoBoxElementBox">
+                <p class="userInfoBoxElementTitle">ID</p>
+                <p id="idDetail" class="userInfoBoxElementDetail"></p>
+              </div>
+              <div class="userInfoBoxElementBox">
+                <p class="userInfoBoxElementTitle">Level</p>
+                <p id="levelDetail" class="userInfoBoxElementDetail">Undergraduate Semester System</p>
+              </div>
+              <div class="userInfoBoxElementBox">
+                <p class="userInfoBoxElementTitle">Classification</p>
+                <p id="classificationDetail" class="userInfoBoxElementDetail">Freshman</p>
+              </div>
+              <div class="userInfoBoxElementBox">
+                <p class="userInfoBoxElementTitle">Mentor</p>
+                <p id="mentorDetail" class="userInfoBoxElementDetail">Price, Richard W </p>
+              </div>
+              <div class="userInfoBoxElementBox">
+                <p class="userInfoBoxElementTitle">Catalog Year</p>
+                <p id="catalogYearDetail" class="userInfoBoxElementDetail">2015-2016</p>
+              </div>
+            </div>
+
+            <div class="userInfoBoxElement">
+              <div class="userInfoBoxElementBox">
+                <p class="userInfoBoxElementTitle">School</p>
+                <p id="schoolDetail" class="userInfoBoxElementDetail">School of Science & Technology</p>
+              </div>
+              <div class="userInfoBoxElementBox">
+                <p class="userInfoBoxElementTitle">Degree</p>
+                <p id="degreeDetail" class="userInfoBoxElementDetail">Bachelor of Science</p>
+              </div>
+              <div class="userInfoBoxElementBox">
+                <p class="userInfoBoxElementTitle">Major</p>
+                <p id="majorDetail" class="userInfoBoxElementDetail">Info Tech - Software Development</p>
+              </div>
+              <div class="userInfoBoxElementBox">
+                <p class="userInfoBoxElementTitle">Minor</p>
+                <p id="minorDetail" class="userInfoBoxElementDetail"></p>
+              </div>
+              <div class="userInfoBoxElementBox">
+                <p class="userInfoBoxElementTitle">Applied for Graduation</p>
+                <p id="appliedforGraduationDetail" class="userInfoBoxElementDetail">No</p>
+              </div>
+              <div class="userInfoBoxElementBox">
+                <p class="userInfoBoxElementTitle">Expected Graduation Date</p>
+                <p id="expectedGraduationDateDetail" class="userInfoBoxElementDetail"></p>
+              </div>
+            </div>
+
+            <div class="userInfoBoxElement">
+              <div class="userInfoBoxElementBox">
+                <p class="userInfoBoxElementTitle">Institutional Hours Earned</p>
+                <p id="institutionalHoursEarnedDetail" class="userInfoBoxElementDetail">12</p>
+              </div>
+              <div class="userInfoBoxElementBox">
+                <p class="userInfoBoxElementTitle">Institutional GPA</p>
+                <p id="institutionalGpaDetail" class="userInfoBoxElementDetail">3.25</p>
+              </div>
+              <div class="userInfoBoxElementBox">
+                <p class="userInfoBoxElementTitle">Transfer Hours Earned</p>
+                <p id="transferHoursEarnedDetail" class="userInfoBoxElementDetail">3</p>
+              </div>
+              <div class="userInfoBoxElementBox">
+                <p class="userInfoBoxElementTitle">Transfer GPA</p>
+                <p id="transferGpaDetail" class="userInfoBoxElementDetail">3.00</p>
+              </div>
+              <div class="userInfoBoxElementBox">
+                <p class="userInfoBoxElementTitle">Overall Hours Earned</p>
+                <p id="overallHoursEarnedDetail" class="userInfoBoxElementDetail">15</p>
+              </div>
+              <div class="userInfoBoxElementBox">
+                <p class="userInfoBoxElementTitle">Overall GPA</p>
+                <p id="overallGpaDetail" class="userInfoBoxElementDetail">3.20</p>
+              </div>
+              <div class="userInfoBoxElementBox">
+                <p class="userInfoBoxElementTitle">Registration Hold</p>
+                <p id="registrationHoldDetail" class="userInfoBoxElementDetail"></p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="userOptions">
+            <div class="userOptionBoxElement">
+              <img id="classNeeded" src="assets/img/classNeeded.svg" alt="">
+              <p>class needed</p>
+            </div>
+            <div class="userOptionBoxElement">
+              <img id="classTaken" src="assets/img/classTaken.svg" alt="">
+              <p>class taken</p>
+            </div>
+            <div class="userOptionBoxElement">
+              <img id="classPlanner" src="assets/img/classPlanner.svg" alt="">
+              <p>class planner</p>
+            </div>
+          </div>
+
+          <div class="userContent">
+            <div class="userContentClassNeeded">
+
+
+              <!-- Button trigger modal -->
+              <div class="myModalBtn" data-toggle="modal" data-target="#myModal">
+                <p class="myModalBtnCNum">ITEC 2130</p>
+                <p class="myModalBtnCName">Web Technologies</p>
+                <div class="myModalBtnCredits">
+                  <p class="myModalBtnCreditsT">Credits:</p>
+                  <p class="myModalBtnCreditsN">4</p>
+                </div>
+              </div>
+
+              <!-- Modal -->
+              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <!-- <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                      <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                    </div> -->
+                    <div class="modal-body">
+                      <div class="myCBox">
+                        <p class="myClassNum">ITEC 2130</p>
+                        <p class="myClassName">Web Technologies</p>
+                        <div class="myClassCreditBox">
+                          <p class="myClassCredit">Credits:</p>
+                          <p class="myClassCreditNum">4</p>
+                        </div>
+                        <!-- <div class="openDiv">+</div> -->
+                        <div class="displayInfo">
+                          <div class="myCPBox">
+                            <p class="myCPT">Prerequisite:</p>
+                            <div class="myCPCBox">
+                              <p class="myCPC">ITEC 1001</p>
+                            </div>
+                          </div>
+                          <p class="myCI">The course concentrates on the client side software web development and web animations. It also addresses the social and economic implications of current and emerging web technologies</p>
+                          <p class="myCILT">Upon completion of this course students will</p>
+                          <ul class="myCIOL">
+                            <li class="myCIL">Design, create and deploy a website</li>
+                            <li class="myCIL">Design and create web animations</li>
+                            <li class="myCIL">Describe the social and economic implications of social networking</li>
+                            <li class="myCIL">Discuss current and emerging web technologies</li>
+                            <li class="myCIL">Utilize web technologies for an international environment</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+
+
+
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="assets/bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+  <script src="assets/bower_components/bootstrap/dist/js/bootstrap.min.js" charset="utf-8"></script>
+  <script src="assets/js/min/degreePlanner-min.js" charset="utf-8"></script>
+  <script>
+  </body>
+  </html>

@@ -1,0 +1,1 @@
+jQuery.fn.extend({toggleText:function(t,e){var i=this;return i.text()!==t&&i.text()!==e?i.text(t):i.text()===t?i.text(e):i.text()===e&&i.text(t),this.show(3002)}}),$(".displayInfo").hide(),$(document).ready(function(){$(".openDiv").click(function(){$(this).siblings(".displayInfo").slideToggle(),$(this).toggleText("+","-")})});

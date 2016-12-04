@@ -1,0 +1,206 @@
+* {
+  color: #1F1F1F; }
+
+body {
+  background-color: #F1F1F1;
+  background-image: url("../img/ggc.svg");
+  background-repeat: repeat;
+  background-size: 100px; }
+
+p {
+  margin: 0; }
+
+.degreePlannerContainer .degreePlannerCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.degreePlannerGetForm {
+  background-color: #F1F1F1;
+  margin: 20px 0px;
+  padding: 0px 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: 0px 0px 5px 0px rgba(31, 31, 31, 0.5);
+  transition: .3s ease; }
+  .degreePlannerGetForm:hover {
+    box-shadow: 0px 0px 10px 0px rgba(31, 31, 31, 0.5); }
+  .degreePlannerGetForm input {
+    background-color: white;
+    margin: 20px 0px !important;
+    text-align: center !important;
+    border: 1px solid #1f1f1f !important;
+    transition: .3s ease; }
+    .degreePlannerGetForm input:focus {
+      outline: none !important;
+      border: 1px solid #e28104 !important;
+      box-shadow: 0px 0px 5px 0px rgba(31, 31, 31, 0.5); }
+  .degreePlannerGetForm input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; }
+  .degreePlannerGetForm input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0; }
+  .degreePlannerGetForm button {
+    margin-bottom: 20px !important;
+    border: 1px solid #1f1f1f !important;
+    background-color: white !important;
+    padding: 1px 20px; }
+    .degreePlannerGetForm button:hover {
+      border: 1px solid #e28104 !important; }
+
+.degreePlannerUserPersonalInfoContainer {
+  width: 90%; }
+  .degreePlannerUserPersonalInfoContainer .degreePlannerUserPersonalInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #F1F1F1;
+    box-shadow: 0px 0px 5px 0px rgba(31, 31, 31, 0.5);
+    transition: .3s ease; }
+    .degreePlannerUserPersonalInfoContainer .degreePlannerUserPersonalInfo:hover {
+      box-shadow: 0px 0px 10px 0px rgba(31, 31, 31, 0.5); }
+    .degreePlannerUserPersonalInfoContainer .degreePlannerUserPersonalInfo #userPicture {
+      margin: 19px;
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background-color: white;
+      box-shadow: 0px 2px 5px 0px rgba(31, 31, 31, 0.5);
+      transition: .3s ease; }
+      .degreePlannerUserPersonalInfoContainer .degreePlannerUserPersonalInfo #userPicture:hover {
+        box-shadow: 0px 2px 10px 0px rgba(31, 31, 31, 0.5); }
+    .degreePlannerUserPersonalInfoContainer .degreePlannerUserPersonalInfo #userFullName {
+      font-size: 2.5em;
+      padding-bottom: 20px; }
+
+.userInfoBox {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px;
+  width: 90%; }
+  .userInfoBox .userInfoBoxElement {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 320px; }
+  .userInfoBox .userInfoBoxElementBox {
+    box-shadow: 0px 2px 1px 0px rgba(31, 31, 31, 0.5);
+    margin-bottom: 10px;
+    cursor: default; }
+    .userInfoBox .userInfoBoxElementBox .userInfoBoxElementTitle {
+      padding: 5px;
+      text-align: center;
+      color: #F1F1F1;
+      background-color: #00704a; }
+    .userInfoBox .userInfoBoxElementBox .userInfoBoxElementDetail {
+      padding: 10px;
+      text-align: center;
+      background-color: white; }
+
+.userOptions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 460px;
+  height: 180px; }
+  .userOptions .userOptionBoxElement {
+    padding: 20px; }
+    .userOptions .userOptionBoxElement img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: white;
+      margin-bottom: 10px;
+      box-shadow: 0px 2px 5px 0px rgba(31, 31, 31, 0.5);
+      transition: .3s ease; }
+      .userOptions .userOptionBoxElement img:hover {
+        box-shadow: 0px 2px 10px 0px rgba(31, 31, 31, 0.5); }
+
+.userContent {
+  width: 95% !important;
+  margin-bottom: 20px; }
+  .userContent .userContentClassNeeded .classListTitle {
+    font-size: 1.5em;
+    padding: 20px;
+    background-color: #00704a;
+    color: #F1F1F1; }
+  .userContent .userContentClassNeeded .classArea {
+    font-size: 1.2em;
+    padding: 10px;
+    background-color: #00a36c;
+    color: #F1F1F1; }
+  .userContent .userContentClassNeeded .classList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px; }
+    .userContent .userContentClassNeeded .classList .classBoxContainer {
+      width: 320px;
+      display: flex;
+      transition: .3s ease;
+      margin: 10px;
+      box-shadow: 0px 2px 5px 0px rgba(31, 31, 31, 0.5); }
+      .userContent .userContentClassNeeded .classList .classBoxContainer:hover {
+        box-shadow: 0px 2px 10px 0px rgba(31, 31, 31, 0.5); }
+      .userContent .userContentClassNeeded .classList .classBoxContainer .classBox {
+        position: relative;
+        cursor: default;
+        width: 250px;
+        height: 140px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-color: white; }
+        .userContent .userContentClassNeeded .classList .classBoxContainer .classBox .classTakenX {
+          position: absolute;
+          background-color: #00704a;
+          width: 70px;
+          height: 70px;
+          border-radius: 50%;
+          margin: auto;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          box-shadow: 0px 2px 5px 0px rgba(31, 31, 31, 0.5);
+          opacity: 0.3; }
+        .userContent .userContentClassNeeded .classList .classBoxContainer .classBox .classNameBox .classNum {
+          font-size: 1.2em;
+          font-weight: bold; }
+        .userContent .userContentClassNeeded .classList .classBoxContainer .classBox .classNameBox .className {
+          font-style: italic;
+          color: rgba(31, 31, 31, 0.5); }
+        .userContent .userContentClassNeeded .classList .classBoxContainer .classBox .classCreditBox {
+          display: flex; }
+          .userContent .userContentClassNeeded .classList .classBoxContainer .classBox .classCreditBox .classCreditTitle {
+            font-style: italic;
+            margin-right: 10px; }
+          .userContent .userContentClassNeeded .classList .classBoxContainer .classBox .classCreditBox .classCreditNum {
+            font-style: italic; }
+      .userContent .userContentClassNeeded .classList .classBoxContainer .classBoxControls {
+        width: 70px;
+        padding: 10px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; }
+        .userContent .userContentClassNeeded .classList .classBoxContainer .classBoxControls img {
+          cursor: pointer;
+          margin: 10px;
+          border: 1px solid #1F1F1F;
+          width: 29px;
+          height: 29px;
+          border-radius: 50%;
+          background-color: #F1F1F1;
+          transition: .3s ease;
+          box-shadow: 0px 2px 2px 0px rgba(31, 31, 31, 0.5); }
+          .userContent .userContentClassNeeded .classList .classBoxContainer .classBoxControls img:hover {
+            box-shadow: 0px 2px 8px 0px rgba(31, 31, 31, 0.5); }
