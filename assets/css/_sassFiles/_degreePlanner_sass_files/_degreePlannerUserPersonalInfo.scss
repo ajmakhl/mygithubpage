@@ -12,6 +12,7 @@
     @include defaultBS(0px,10px);
   }
   #userPicture {
+    cursor: pointer;
     margin: 19px;
     width: 90px;
     height: 90px;

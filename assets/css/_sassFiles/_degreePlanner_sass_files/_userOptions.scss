@@ -7,6 +7,7 @@
   .userOptionBoxElement {
     padding: 20px;
     img {
+      cursor: pointer;
       width: 100px;
       height: 100px;
       border-radius: 50%;
@@ -17,6 +18,9 @@
       &:hover {
         @include defaultBS(2px,10px);
       }
+    }
+    p {
+      text-align: center;
     }
   }
 }
