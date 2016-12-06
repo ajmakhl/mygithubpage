@@ -4,39 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <title>Document</title>
+  <link rel="stylesheet" href="bower_components/lightbox2/dist/css/lightbox.min.css">
+  <link rel="stylesheet" href="assets/css/master.css">
+  
+  <title>gallery</title>
+  <style media="screen">
+    body {
+      background-color: #7f7f7f;
+    }
+  </style>
 </head>
 <body>
-  <div class="container myContainer">
-    <div class="row myRow">
-      <div class="col-md-12 myCol">
-        <a class="myColG" id="g001" href="https://raw.githubusercontent.com/ajmakhl/Images/master/001.jpg"></a>
-        <a class="myColG" id="g002" href="https://raw.githubusercontent.com/ajmakhl/Images/master/002.jpg"></a>
-        <a class="myColG" id="g003" href="https://raw.githubusercontent.com/ajmakhl/Images/master/003.jpg"></a>
-        <a class="myColG" id="g004" href="https://raw.githubusercontent.com/ajmakhl/Images/master/004.jpg"></a>
-        <a class="myColG" id="g005" href="https://raw.githubusercontent.com/ajmakhl/Images/master/005.jpg"></a>
-        <a class="myColG" id="g006" href="https://raw.githubusercontent.com/ajmakhl/Images/master/006.jpg"></a>
-        <a class="myColG" id="g007" href="https://raw.githubusercontent.com/ajmakhl/Images/master/007.jpg"></a>
-        <a class="myColG" id="g008" href="https://raw.githubusercontent.com/ajmakhl/Images/master/008.jpg"></a>
-        <a class="myColG" id="g009" href="https://raw.githubusercontent.com/ajmakhl/Images/master/009.jpg"></a>
-        <a class="myColG" id="g010" href="https://raw.githubusercontent.com/ajmakhl/Images/master/010.jpg"></a>
-        <a class="myColG" id="g011" href="https://raw.githubusercontent.com/ajmakhl/Images/master/011.jpg"></a>
-        <a class="myColG" id="g012" href="https://raw.githubusercontent.com/ajmakhl/Images/master/012.jpg"></a>
-        <a class="myColG" id="g013" href="https://raw.githubusercontent.com/ajmakhl/Images/master/013.jpg"></a>
-        <a class="myColG" id="g014" href="https://raw.githubusercontent.com/ajmakhl/Images/master/014.jpg"></a>
-        <a class="myColG" id="g015" href="https://raw.githubusercontent.com/ajmakhl/Images/master/015.jpg"></a>
-        <a class="myColG" id="g016" href="https://raw.githubusercontent.com/ajmakhl/Images/master/016.jpg"></a>
-        <a class="myColG" id="g017" href="https://raw.githubusercontent.com/ajmakhl/Images/master/017.jpg"></a>
-        <a class="myColG" id="g018" href="https://raw.githubusercontent.com/ajmakhl/Images/master/018.jpg"></a>
-        <a class="myColG" id="g019" href="https://raw.githubusercontent.com/ajmakhl/Images/master/019.jpg"></a>
-        <a class="myColG" id="g020" href="https://raw.githubusercontent.com/ajmakhl/Images/master/020.jpg"></a>
-        <a class="myColG" id="g021" href="https://raw.githubusercontent.com/ajmakhl/Images/master/021.jpg"></a>
-        <a class="myColG" id="g022" href="https://raw.githubusercontent.com/ajmakhl/Images/master/022.jpg"></a>
-        <a class="myColG" id="g023" href="https://raw.githubusercontent.com/ajmakhl/Images/master/023.jpg"></a>
-      </div>
-    </div>
+  <img id="myNavBtn" src="assets/img/menu.svg" alt="menu btn">
+  <div class="myNavBar navToggle">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="degree.html">Degree</a></li>
+    </ul>
   </div>
+  
+  <div class="myGallery"></div>
+    
+  <script src="bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+      <script src="bower_components/lightbox2/dist/js/lightbox.min.js" charset="utf-8"></script>
+      <script src="https://www.gstatic.com/firebasejs/3.6.2/firebase.js"></script>
+      <script>
+        // Initialize Firebase
+        var config = {
+          apiKey: "AIzaSyBaDFtrUOYaF-_P2A_4jC6pj3ndWUAP7jQ",
+          authDomain: "ajmakhl-c6154.firebaseapp.com",
+          databaseURL: "https://ajmakhl-c6154.firebaseio.com",
+          storageBucket: "ajmakhl-c6154.appspot.com",
+          messagingSenderId: "677791106391"
+        };
+        firebase.initializeApp(config);
+      </script>
+      <script src="assets/js/min/master-min.js" charset="utf-8"></script>
+      
 </body>
 </html>

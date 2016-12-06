@@ -4,20 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="bower_components/lightbox2/dist/css/lightbox.min.css">
+  <link rel="stylesheet" href="assets/css/master.css">
+  
   <title>Document</title>
 </head>
 <body>
-<div class="container myContainer">
-  <div class="row myRow">
-    <div class="col-md-12 indexCol">
-      <a class="indexA" href="resume.html">resume</a>
-      <a class="indexA" href="gallery.html">gallery</a>
-      <!-- <a class="indexA" href="classes.html">classes</a> -->
-      <a class="indexA" href="degreePlanner.html">degree planner</a>
-    </div>
+  <img id="myNavBtn" src="assets/img/menu.svg" alt="menu btn">
+  <div class="myNavBar navToggle">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="degree.html">Degree</a></li>
+    </ul>
   </div>
-</div>
+  
+
+  <script src="bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+  <script src="bower_components/lightbox2/dist/js/lightbox.min.js" charset="utf-8"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.6.2/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBaDFtrUOYaF-_P2A_4jC6pj3ndWUAP7jQ",
+      authDomain: "ajmakhl-c6154.firebaseapp.com",
+      databaseURL: "https://ajmakhl-c6154.firebaseio.com",
+      storageBucket: "ajmakhl-c6154.appspot.com",
+      messagingSenderId: "677791106391"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="assets/js/min/master-min.js" charset="utf-8"></script>
+  
 </body>
 </html>

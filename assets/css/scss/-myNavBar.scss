@@ -1,0 +1,63 @@
+#myNavBtn {
+  display: none;
+}
+.myNavBar {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: rgba(black, 0.7);
+  ul {
+    margin-left: 15vw;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    li {
+      a {
+        cursor: pointer;
+        text-decoration: none;
+        display: block;
+        padding: 5px 20px;
+        color: rgba(white, 0.9);
+        font-size: 16px;
+        &:hover {
+          background-color: rgba(white, 0.9);
+          color: rgba(black, 0.7);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  #myNavBtn {
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    cursor: pointer;
+  }
+  .myNavBar {
+    align-items: flex-start;
+    justify-content: flex-start;
+    &.navToggle {
+      margin-top: -152px;
+    }
+    ul {
+      margin-left: 0vw;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      li {
+        a {
+          width: 60px;
+          padding: 10px 20px;
+        }
+      }
+    }
+  }
+}

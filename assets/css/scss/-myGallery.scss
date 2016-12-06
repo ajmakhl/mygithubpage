@@ -1,0 +1,19 @@
+.myGallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow ease-in-out .0s;
+  a {
+    margin: 10px;
+    &:hover {
+      transition: box-shadow ease-in-out .0s;
+      box-shadow: 0px 0px 10px 0px black;
+    }
+    img {
+      display: block;
+      cursor: pointer;
+    }
+  }
+}
