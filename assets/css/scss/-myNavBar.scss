@@ -1,5 +1,12 @@
 #myNavBtn {
   display: none;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 999;
 }
 .myNavBar {
   width: 100vw;
@@ -31,21 +38,35 @@
     }
   }
 }
-
-@media (max-width: $tablet) {
+@media (max-width: $mobile) {
   #myNavBtn {
     display: block;
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    width: 30px;
-    cursor: pointer;
+    border: 2px solid white;
+    background: url('../img/menu_white.svg') no-repeat center center;
+    &.navToggle {
+      border: 2px solid white;
+    }
   }
+}
+@media (max-width: $tablet) and (min-width: 661px) {
+  #myNavBtn {
+    display: block;
+    border: 2px solid black;
+    background: url('../img/menu_black.svg') no-repeat center center;
+    &.navToggle {
+      border: 2px solid white;
+      background: url('../img/menu_white.svg') no-repeat center center;
+    }
+  }
+}
+@media (max-width: $tablet) {
   .myNavBar {
+    position: fixed;
     align-items: flex-start;
     justify-content: flex-start;
+    margin-top: -152px;
     &.navToggle {
-      margin-top: -152px;
+      margin-top: 0px;
     }
     ul {
       margin-left: 0vw;

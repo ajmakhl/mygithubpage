@@ -17,3 +17,25 @@
     }
   }
 }
+@media (max-width: 680px) and (min-width: $mobile) {
+  .myGallery {
+    a {
+      &:hover {
+      }
+      img {
+        width: 35vw;
+      }
+    }
+  }
+}
+@media (max-width: $mobile) {
+  .myGallery {
+    a {
+      &:hover {
+      }
+      img {
+        width: 100vw;
+      }
+    }
+  }
+}

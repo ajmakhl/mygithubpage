@@ -2,6 +2,7 @@ $(document).ready(function() {
   // navbar
   $('#myNavBtn').click(function() {
     $('.myNavBar').toggleClass('navToggle');
+    $('#myNavBtn').toggleClass('navToggle');
   });
   //gallery
   var image_list_count = 23;
