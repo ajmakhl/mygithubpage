@@ -1,0 +1,26 @@
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+@mixin space($margin, $padding) {
+  margin: $margin;
+  padding: $padding;
+}
+@mixin spacev($marginTop, $marginBottom, $paddingTop, $paddingBottom) {
+  margin-top: $marginTop;
+  margin-bottom: $marginBottom;
+  padding-top: $paddingTop;
+  padding-bottom: $paddingBottom;
+}
+@mixin spaceh($marginRight, $marginLeft, $paddingRight, $paddingLeft) {
+  margin-right: $marginRight;
+  margin-left: $marginLeft;
+  padding-right: $paddingRight;
+  padding-left: $paddingLeft;
+}

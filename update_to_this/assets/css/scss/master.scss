@@ -1,0 +1,13 @@
+// res
+@import 'res/variables';
+@import 'res/mixins';
+@import 'res/defaults';
+// components
+@import 'components/navbar';
+@import 'components/header_index';
+// resume left components
+@import 'components/resume_left/resume_left';
+@import 'components/resume_left/resume_container';
+@import 'components/resume_left/profile_section';
+@import 'components/resume_left/experience_section';
+@import 'components/resume_left/experience_each';

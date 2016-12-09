@@ -1,0 +1,26 @@
+.navbar {
+  @include flex(row, center, center);
+  @include size(calc(100vw - 20px), auto);
+  @include spacev(10px, 0, 0, 0);
+  @include spaceh(10px, 10px, 0, 0);
+  border-radius: $default_radius;
+  background-color: $my_white_0;
+  box-shadow: 0px 0px 1px 0px $my_black_2;
+  ul {
+    list-style: none;
+    @include flex(row, center, center);
+    li {
+      @include flex(row, center, center);
+      a {
+        display: block;
+        text-decoration: none;
+        color: $my_black_1;
+        @include space(0, 10px);
+        &:hover {
+          color: $my_black_0;
+          background-color: $my_white_1;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+// fonts
+@import url('https://fonts.googleapis.com/css?family=Catamaran');
+@import url('https://fonts.googleapis.com/css?family=Muli');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+$my_font_family: 'Roboto', 'Muli', 'Catamaran', sans-serif;
+// colors white...
+$my_white_0: #F8F8F8;
+$my_white_1: #D0D0D0;
+$my_white_2: #B2B2B2;
+// colors black...
+$my_black_0: #232323;
+$my_black_1: #474747;
+$my_black_2: #6A6A6A;
+// responsive
+$my_desktop: 960px;
+$my_tablet: 768px;
+$my_mobile: 320px;
+// border radius
+$default_radius: 2px;

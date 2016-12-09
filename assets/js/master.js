@@ -25,7 +25,8 @@ $(document).ready(function() {
       'alt': 'img_' + i
     })).appendTo('.myGallery');
   }
-
+  
+  // resume experience bar
   //Languages
   var lang_val = [200, 200, 180, 80, 50];
   for(i = 0; i < lang_val.length; i++) {

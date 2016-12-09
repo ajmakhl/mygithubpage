@@ -1,0 +1,41 @@
+.experience_each {
+  @include flex(column, flex-start, flex-start);
+  align-self: center;
+  width: 80%;
+  #experience_text_title {
+    color: $my_white_0;
+    font-size: 17px;
+    @include spaceh(0, 0, 0, 0);
+    @include spacev(10px, 10px, 0, 0);
+  }
+  #experience_outer_section {
+    position: relative;
+    @include spaceh(0, -5px, 0, 0);
+    @include spacev(0, 10px, 0, 0);
+    @include size(240px, 15px);
+    border-radius: $default_radius;
+    border: 1px solid $my_white_0;
+    #experience_inner_section {
+      @include size(0, 15px);
+      background-color: white;
+    }
+    #experience_block_btn {
+      width: 15px;
+      position: absolute;
+      top: -1px;
+      right: -30px;
+      z-index: 999;
+      border: 1px solid $my_white_0;
+      border-radius: $default_radius;
+      cursor: pointer;
+    }
+  }
+  .experience_block {
+    @include spaceh(0, -5px, 5px, 5px);
+    @include spacev(0, 0, 0, 0);
+    @include size(230px, auto);
+    border-radius: $default_radius;
+    border: 1px solid $my_white_1;
+    color: $my_white_1;
+  }
+}

@@ -1,0 +1,40 @@
+.header_index {
+  @include flex(column, center, center);
+  @include size(calc(100vw - 40px), auto);
+  @include spacev(10px, 0, 10px, 10px);
+  @include spaceh(10px, 10px, 10px, 10px);
+  border-radius: $default_radius;
+  background-color: $my_white_0;
+  box-shadow: 0px 0px 1px 0px $my_black_2;
+  & p:nth-of-type(1) {
+    font-size: 3vw;
+    @include space(0, 10px);
+    border: 5px solid $my_black_0;
+  }
+  & p:nth-of-type(2) {
+    font-size: 5vw;
+    border-bottom: 5px solid $my_black_0;
+  }
+  & p:nth-of-type(3) {
+    font-size: 4vw;
+    & span:nth-of-type(1) {
+      font-style: italic;
+    }
+  }
+}
+@media (max-width: $my_tablet) {
+  .header_index {
+    & p:nth-of-type(1) {
+      font-size: 5vw;
+      @include space(0, 5px);
+      border: 3px solid $my_black_0;
+    }
+    & p:nth-of-type(2) {
+      font-size: 7vw;
+      border-bottom: 3px solid $my_black_0;
+    }
+    & p:nth-of-type(3) {
+      font-size: 6vw;
+    }
+  }
+}
