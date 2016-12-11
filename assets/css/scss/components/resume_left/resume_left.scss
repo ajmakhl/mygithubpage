@@ -1,0 +1,13 @@
+.resume_left {
+  @include flex(column, center, center);
+  @include space(10px, 10px);
+  @include size(calc(320px - 40px), auto);
+  background-color: $my_black_2;
+  box-shadow: 0px 0px 1px 0px $my_black_2;
+  border-radius: $default_radius;
+}
+@media (max-width: $my_tablet) {
+  .resume_left {
+    @include size(calc(100vw - 40px), auto);
+  }
+}

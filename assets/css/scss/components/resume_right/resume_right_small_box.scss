@@ -1,0 +1,54 @@
+.resume_right_small_box {
+  @include size((calc(100% - 20px)), auto);
+  @include flex(column, flex-start, flex-start);
+  @include space(0, 10px);
+  border-radius: $default_radius;
+  &:hover {
+    background-color: $my_white_1;
+  }
+  #small_box_title {
+    color: $my_black_0;
+    font-size: 30px;
+  }
+  #small_box_sub {
+    color: $my_black_1;
+    font-size: 15px;
+  }
+  .small_box_list {
+    list-style: none;
+    @include space(10px, 0);
+    li {
+      @include spaceh(0, 0, 10px, 10px);
+      @include spacev(0, 10px, 10px, 10px);
+      border-left: 2px solid $my_black_1;
+      // border-left: 2px solid $my_white_0;
+      color: $my_black_0;
+      font-size: 20px;
+      &:hover {
+        // border-left: 20px solid $my_black_1;
+        // border-left: 20px solid $my_white_0;
+        border-left: 2px solid $my_white_0;
+        color: $my_white_0;
+        background-color: $my_black_2;
+      }
+    }
+  }
+}
+@media (max-width: $my_tablet) {
+  .resume_right_small_box {
+    &:hover {
+    }
+    #small_box_title {
+      font-size: 25px;
+    }
+    #small_box_sub {
+    }
+    .small_box_list {
+      @include space(0, 0);
+      @include spacev(10px, 10px, 0, 0);
+      li {
+        font-size: 15px;
+      }
+    }
+  }
+}

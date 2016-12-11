@@ -1,0 +1,22 @@
+.profile_section {
+  @include flex(row, flex-start, center);
+  width:90%;
+  @include space(0, 10px);
+  border-radius: $default_radius;
+  &:hover {
+    background-color: $my_black_1;
+  }
+  img {
+    @include size(50px, 50px);
+  }
+  p {
+    color: $my_white_0;
+    font-size: 17px;
+    margin-left: 10px;
+  }
+}
+@media (max-width: $my_tablet) {
+  .profile_section {
+    width: 80%;
+  }
+}

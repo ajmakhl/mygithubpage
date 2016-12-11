@@ -1,0 +1,17 @@
+* {
+  @include space(0, 0);
+  font-family: $my_font_family;
+  transition: all ease-in-out 0.2s;
+}
+body {
+}
+
+.resume_wrapper {
+  width: 100vw;
+  @include flex(row, center, flex-start);
+}
+@media (max-width: $my_tablet) {
+  .resume_wrapper {
+    flex-wrap: wrap;
+  }
+}

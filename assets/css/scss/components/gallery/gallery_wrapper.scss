@@ -1,0 +1,57 @@
+.gallery_wrapper {
+  @include flex(row, center, center);
+  flex-wrap: wrap;
+  @include space(10px, 10px);
+  @include size(calc(100vw - 40px), auto);
+  background-color: $my_white_2;
+  box-shadow: 0px 0px 1px 0px $my_black_2;
+  border-radius: $default_radius;
+  transition: box-shadow ease-in-out .0s;
+  a {
+    margin: 10px;
+    box-shadow: 0px 0px 10px 0px $my_black_1;
+    transition: box-shadow ease-in-out .0s;
+    border: 5px solid $my_black_0;
+    border-radius: $default_radius;
+    overflow: hidden;
+    img {
+      width: 320px;
+      display: block;
+      cursor: pointer;
+      &:hover {
+        filter: grayscale(100%);
+        animation: filter-animation 2s infinite;
+      }
+    }
+  }
+}
+@keyframes filter-animation {
+  0% {
+    // filter: sepia(0) saturate(2);
+    filter: brightness(1) saturate(1);
+    transform: scale(1);
+  }
+
+  50% {
+    // filter: sepia(1) saturate(8);
+    filter: brightness(2) saturate(2);
+    transform: scale(1.1);
+  }
+
+  100% {
+    // filter: sepia(0) saturate(2);
+    filter: brightness(1) saturate(1);
+    transform: scale(1);
+  }
+}
+@media (max-width: $my_tablet) {
+  .gallery_wrapper {
+    a {
+      &:hover {
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

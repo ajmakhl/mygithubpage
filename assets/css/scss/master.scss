@@ -1,6 +1,19 @@
-@import "_vars";
-@import "_mixins";
-@import "_defaults";
-@import "-myNavBar";
-@import "-myGallery";
-@import '-myResume';
+// res
+@import 'res/variables';
+@import 'res/mixins';
+@import 'res/defaults';
+// components
+@import 'components/navbar';
+@import 'components/header_index';
+// resume left components
+@import 'components/resume_left/resume_left';
+@import 'components/resume_left/resume_container';
+@import 'components/resume_left/profile_section';
+@import 'components/resume_left/experience_section';
+@import 'components/resume_left/experience_each';
+// resume right components
+@import 'components/resume_right/resume_right';
+@import 'components/resume_right/resume_right_big_box';
+@import 'components/resume_right/resume_right_small_box';
+// gallery components
+@import 'components/gallery/gallery_wrapper';

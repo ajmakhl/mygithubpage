@@ -1,0 +1,15 @@
+.resume_right {
+  @include flex(column, flex-start, flex-start);
+  @include space(10px, 10px);
+  @include size(640px - 40px, auto);
+  // background-color: $my_white_2;
+  // box-shadow: 0px 0px 1px 0px $my_black_2;
+  border-radius: $default_radius;
+}
+@media (max-width: $my_tablet) {
+  .resume_right {
+    @include size(calc(100% - 40px), auto);
+    // background-color: $my_white_2;
+    // box-shadow: 0px 0px 1px 0px $my_black_2;
+  }
+}
