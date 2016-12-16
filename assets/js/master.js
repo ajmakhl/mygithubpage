@@ -14,7 +14,7 @@ $(document).ready(function() {
     [
       'assets/img/profile/phone.svg',
       'phone',
-      '602-394-8548'
+      'Email me!'
     ],
     [
       'assets/img/profile/location.svg',
