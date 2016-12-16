@@ -14,7 +14,7 @@ $(document).ready(function() {
     [
       'assets/img/profile/phone.svg',
       'phone',
-      'Email me!'
+      'email me!'
     ],
     [
       'assets/img/profile/location.svg',
