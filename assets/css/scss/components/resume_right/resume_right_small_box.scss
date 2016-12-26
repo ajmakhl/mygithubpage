@@ -4,7 +4,7 @@
   @include space(0, 10px);
   border-radius: $default_radius;
   &:hover {
-    background-color: $my_white_1;
+    // background-color: $my_white_1;
   }
   #small_box_title {
     color: $my_black_0;
@@ -27,9 +27,9 @@
       &:hover {
         // border-left: 20px solid $my_black_1;
         // border-left: 20px solid $my_white_0;
-        border-left: 2px solid $my_white_0;
-        color: $my_white_0;
-        background-color: $my_black_2;
+        // border-left: 2px solid $my_white_0;
+        // color: $my_white_0;
+        // background-color: $my_black_2;
       }
     }
   }

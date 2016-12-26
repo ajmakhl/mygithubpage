@@ -4,7 +4,7 @@
   @include space(0, 10px);
   border-radius: $default_radius;
   &:hover {
-    background-color: $my_black_1;
+    // background-color: $my_black_1;
   }
   img {
     @include size(50px, 50px);
