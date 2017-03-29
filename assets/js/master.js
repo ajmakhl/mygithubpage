@@ -4,37 +4,37 @@ $(document).ready(function() {
     [
       'assets/img/profile/name.svg',
       'name',
-      'Abdelrahman Makhl'
+      'Abdelrahman Makhl',
     ],
     [
       'assets/img/profile/email.svg',
       'email',
-      'ajmakhl@gmail.com'
+      'ajmakhl@gmail.com',
     ],
     [
       'assets/img/profile/phone.svg',
       'phone',
-      'email me!'
+      'email me!',
     ],
     [
       'assets/img/profile/location.svg',
       'location',
-      'Georgia, USA'
+      'Georgia, USA',
     ],
     [
       'assets/img/profile/website.svg',
       'website',
-      'www.ajmakhl.me'
+      'www.ajmakhl.me',
     ]
   ];
   function profile_fill(i) {
     var profile_section = $('.profile div:nth-of-type('+i+')');
     var profile_img = profile_section.find('img');
     var profile_p = profile_section.find('p');
-
     $(profile_img).attr('src', profile_section_list[i-1][0]);
     $(profile_img).attr('alt', profile_section_list[i-1][1]);
     $(profile_p).text(profile_section_list[i-1][2]);
+
   }
   for(i = 1; i < profile_section_list.length + 1; i++) {
     profile_fill(i);
@@ -43,21 +43,21 @@ $(document).ready(function() {
   var experience_type_list = [
     [
       'Languages',
-      ['HTML / CSS / JS', '90%', 'Expert in creatively creating web pages with clean responsive UI'],
-      ['React / React Native', '60%', 'Ability to read and write with prebuilt code'],
-      ['Java', '50%', 'Understand the basics and how to break code into reusable methods']
+      ['HTML / CSS / JS', '100%', 'Expert in creatively creating web pages with clean responsive UI'],
+      ['React / React Native', '90%', 'Ability to read and write with prebuilt code'],
+      ['Java', '70%', 'Understand the basics and how to break code into reusable methods']
     ],
     [
       'Software',
-      ['Microsoft Office', '90%', 'Ability to use Word, Excel, and PowerPoint'],
-      ['Adobe CC', '70%', 'Great capability of working with Photoshop, After Effects, Premiere'],
-      ['Cinema 4D', '60%', 'Create models and animation'],
-      ['Affinity Designer', '90%', 'Creatively design clean vectorized graphics']
+      ['Microsoft Office', '100%', 'Ability to use Word, Excel, and PowerPoint'],
+      ['Adobe CC', '80%', 'Great capability of working with Photoshop, After Effects, Premiere'],
+      ['Cinema 4D', '70%', 'Create models and animation'],
+      ['Affinity Designer', '100%', 'Creatively design clean vectorized graphics']
     ],
     [
       'Operating System',
-      ['Mac X', '80%', 'Ability to maneuver and set up a clean and easy to use environment'],
-      ['Windows 7, 8, 10', '90%', 'Have 8 years of windows experience']
+      ['Mac X', '100%', 'Ability to maneuver and set up a clean and easy to use environment'],
+      ['Windows 7, 8, 10', '100%', 'Have 8 years of windows experience']
     ]
   ];
   // display experience_type_list[i][0]
@@ -104,7 +104,16 @@ $(document).ready(function() {
   // experience_detail('os', 2);
 
   // right resume
-  var employment_section = [
+  var experience_section = [
+    [
+      'React Native Developer',
+      'Ala Rasi inc - September 2016 - current',
+      [
+        'Lead Developer in a cross-platform application (iOS, Android)',
+        'Integrated and utilized Redux, React-Native, Firebase, and more',
+        'Lead development and debug team'
+      ]
+    ],
     [
       'A/V Assistant',
       'Georgia Gwinnett College — January 2014 - May 2014',
@@ -147,7 +156,7 @@ $(document).ready(function() {
       right_box_text_fill(i);
     }
   }
-  right_box_text_all('employment', employment_section);
+  right_box_text_all('employment', experience_section);
   right_box_text_all('education', education_section);
   // list
   function right_box_list_all(id, section) {
@@ -163,7 +172,7 @@ $(document).ready(function() {
     }
   }
 }
-right_box_list_all('employment', employment_section);
+right_box_list_all('employment', experience_section);
 right_box_list_all('education', education_section);
 
 //gallery

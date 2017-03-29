@@ -2,7 +2,7 @@
   @include flex(column, flex-start, flex-start);
   align-self: center;
   width: 80%;
-  padding: 10px;
+  // padding: 10px;
   border-radius: $default_radius;
   &:hover {
     // background-color: $my_black_1;
@@ -16,11 +16,11 @@
   #experience_outer_section {
     position: relative;
     @include spacev(0, 10px, 0, 0);
-    @include size(calc(100% - 2px), 15px);
-    border-radius: $default_radius;
+    @include size(calc(100% - 2px), 5px);
+    border-radius: 10px;
     border: 1px solid $my_white_0;
     #experience_inner_section {
-      @include size(0, 15px);
+      @include size(0, 5px);
       background-color: white;
     }
     #experience_block_btn {
