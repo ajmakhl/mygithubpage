@@ -1,0 +1,4 @@
+
+particlesJS.load('particle', 'assets/particleJson/indexParticle.json', function() {
+  console.log('callback - particles.js config loaded');
+});

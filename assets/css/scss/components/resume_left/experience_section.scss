@@ -1,4 +1,5 @@
 .experience_section {
+  z-index: 2;
   @include flex(column, flex-start, flex-start);
   width: 100%;
   @include spacev(0, 0, 0, 0);
