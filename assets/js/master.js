@@ -107,15 +107,15 @@ $(document).ready(function() {
   var experience_section = [
     [
       'React Native Developer',
-      'Personal Project - September 2016 - current',
+      '(personal project) - September 2016 - current',
       [
         'Lead Developer in a cross-platform application (iOS, Android)',
-        'Integrated and utilized Redux, React-Native, Firebase, and more',
+        'Integrated and utilized Redux, React-Native, GraphQL, and more',
         'Lead development and debug team'
       ]
     ],
     [
-      'A/V Assistant',
+      'A/V Technician',
       'Georgia Gwinnett College — January 2014 - May 2014',
       [
         'Provide Positive instructional technology assistance to students, faculty, and staff members',
