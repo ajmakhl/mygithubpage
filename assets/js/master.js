@@ -14,7 +14,7 @@ $(document).ready(function() {
     [
       'assets/img/profile/phone.svg',
       'phone',
-      'email me!',
+      'email me',
     ],
     [
       'assets/img/profile/location.svg',
@@ -107,7 +107,7 @@ $(document).ready(function() {
   var experience_section = [
     [
       'React Native Developer',
-      'Ala Rasi inc - September 2016 - current',
+      'Personal Project - September 2016 - current',
       [
         'Lead Developer in a cross-platform application (iOS, Android)',
         'Integrated and utilized Redux, React-Native, Firebase, and more',
